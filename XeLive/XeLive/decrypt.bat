@@ -1,0 +1,1 @@
+xextool.exe -o decrypted_XeLive.xex -e -u -c -u XeLive.xex

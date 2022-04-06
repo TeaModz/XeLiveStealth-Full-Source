@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Global.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeInvoker.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Natives.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SMC.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Hypervisor.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="PayloadBuilder.cpp">
+      <Filter>System\PayloadBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="Patches.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Launch.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="INI.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionObfuscation.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegrityManager.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Security.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooking.cpp">
+      <Filter>Utils\Hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Requests.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyvault.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Notify.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemHooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleHooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="HudHooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ScnGuideInfo.cpp">
+      <Filter>Hooks\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiCheatHook.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="XeLiveTabScene.cpp">
+      <Filter>Hooks\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Metric.cpp">
+      <Filter>Security\Metric</Filter>
+    </ClCompile>
+    <ClCompile Include="metricBreakpoint.cpp">
+      <Filter>Security\Metric\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="metricIntegrityCheckFailed.cpp">
+      <Filter>Security\Metric\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="metricModuleDigestMismatch.cpp">
+      <Filter>Security\Metric\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="DashboardHooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CrashHandler.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatInterface.cpp">
+      <Filter>Security\Interface\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfaceRegistration.cpp">
+      <Filter>Security\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="XeLiveMainScene.cpp">
+      <Filter>Hooks\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Global.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeInvoker.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Natives.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SMC.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Hypervisor.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="PayloadBuilder.h">
+      <Filter>System\PayloadBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="Patches.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Launch.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="INI.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionObfuscation.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegrityManager.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooking.h">
+      <Filter>Utils\Hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Requests.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyvault.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPU.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Notify.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemHooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleHooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="HudHooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ScnGuideInfo.h">
+      <Filter>Hooks\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiCheatHook.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="XeLiveTabScene.h">
+      <Filter>Hooks\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Metric.h">
+      <Filter>Security\Metric</Filter>
+    </ClInclude>
+    <ClInclude Include="metricBreakpoint.h">
+      <Filter>Security\Metric\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="metricIntegrityCheckFailed.h">
+      <Filter>Security\Metric\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="metricModuleDigestMismatch.h">
+      <Filter>Security\Metric\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="DashboardHooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="UIStructs.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashHandler.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatInterface.h">
+      <Filter>Security\Interface\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceRegistration.h">
+      <Filter>Security\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="XeLiveMainScene.h">
+      <Filter>Hooks\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{52f6c870-7525-4ab3-afaf-58c5f323b660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{75c6fbff-840f-4d8a-b6a1-2aa25ad4dcf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{90b92476-8f5e-4c4c-8515-23be063a0efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{5f9de866-a199-4b69-9f87-8167016a98fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{346bf89f-ed68-4397-84b1-5b0b8f71a821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\PayloadBuilder">
+      <UniqueIdentifier>{2dcadb41-a069-4703-a1cc-66e93598c9ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Hooking">
+      <UniqueIdentifier>{060a4dda-8480-4689-a948-cb764599e0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\Scenes">
+      <UniqueIdentifier>{46c86cb6-65af-4e0e-a09f-cefa5298feba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\Metric">
+      <UniqueIdentifier>{59ab2b6a-e29c-4029-aa6e-bd3c47c20176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\Metric\Modules">
+      <UniqueIdentifier>{1a74b033-9961-4ce8-8f40-1c66bfa35a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\Interface">
+      <UniqueIdentifier>{f8252bef-8f08-44df-a8ce-ee7f197f361b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\Interface\Interfaces">
+      <UniqueIdentifier>{d40b6fe9-3b19-403e-a3d2-2c5efc19b3af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Stealth.xml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+xextool.exe -o XeLiveFuscate.xex -e -e -c -c output.xex

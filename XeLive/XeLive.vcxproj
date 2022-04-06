@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="XeLive|Xbox 360">
+      <Configuration>XeLive</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09d572c4-d33d-4a95-9566-a5e06e28d103}</ProjectGuid>
+    <Keyword>Xbox360Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XeLive|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>2010-01</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='XeLive|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XeLive|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <ImageXexOutput>$(OutDir)XeLive.xex</ImageXexOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='XeLive|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)XeLive.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;LTCG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\xkelib;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)XeLive.pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xapilib.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3ltcg.lib;x3daudioltcg.lib;xmcoreltcg.lib;vcomp.lib</AdditionalDependencies>
+      <AdditionalOptions>/dll /ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\xkelib;</AdditionalLibraryDirectories>
+      <EntryPointSymbol>SecureDllMain</EntryPointSymbol>
+    </Link>
+    <ImageXex>
+      <ConfigurationFile>Stealth.xml</ConfigurationFile>
+      <BaseAddress>
+      </BaseAddress>
+      <AdditionalSections>PP=patches\compiled\both.S.rglp,RO;</AdditionalSections>
+    </ImageXex>
+    <PostBuildEvent>
+      <Command>"$(ProjectDir)XeLive\post.bat"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AntiCheatHook.h" />
+    <ClInclude Include="CheatInterface.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="CPU.h" />
+    <ClInclude Include="CrashHandler.h" />
+    <ClInclude Include="DashboardHooks.h" />
+    <ClInclude Include="FunctionObfuscation.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Hooking.h" />
+    <ClInclude Include="HudHooks.h" />
+    <ClInclude Include="Hypervisor.h" />
+    <ClInclude Include="INI.h" />
+    <ClInclude Include="IntegrityManager.h" />
+    <ClInclude Include="InterfaceRegistration.h" />
+    <ClInclude Include="Keyvault.h" />
+    <ClInclude Include="Launch.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Metric.h" />
+    <ClInclude Include="metricBreakpoint.h" />
+    <ClInclude Include="metricIntegrityCheckFailed.h" />
+    <ClInclude Include="metricModuleDigestMismatch.h" />
+    <ClInclude Include="NativeInvoker.h" />
+    <ClInclude Include="Natives.h" />
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="Notify.h" />
+    <ClInclude Include="Patches.h" />
+    <ClInclude Include="PayloadBuilder.h" />
+    <ClInclude Include="Requests.h" />
+    <ClInclude Include="ScnGuideInfo.h" />
+    <ClInclude Include="Security.h" />
+    <ClInclude Include="SMC.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="SystemHooks.h" />
+    <ClInclude Include="TitleHooks.h" />
+    <ClInclude Include="UIStructs.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="XeLiveMainScene.h" />
+    <ClInclude Include="XeLiveTabScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AntiCheatHook.cpp" />
+    <ClCompile Include="CheatInterface.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="CPU.cpp" />
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="DashboardHooks.cpp" />
+    <ClCompile Include="FunctionObfuscation.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="HudHooks.cpp" />
+    <ClCompile Include="Hypervisor.cpp" />
+    <ClCompile Include="INI.cpp" />
+    <ClCompile Include="IntegrityManager.cpp" />
+    <ClCompile Include="InterfaceRegistration.cpp" />
+    <ClCompile Include="Keyvault.cpp" />
+    <ClCompile Include="Launch.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Metric.cpp" />
+    <ClCompile Include="metricBreakpoint.cpp" />
+    <ClCompile Include="metricIntegrityCheckFailed.cpp" />
+    <ClCompile Include="metricModuleDigestMismatch.cpp" />
+    <ClCompile Include="NativeInvoker.cpp" />
+    <ClCompile Include="Natives.cpp" />
+    <ClCompile Include="Network.cpp" />
+    <ClCompile Include="Notify.cpp" />
+    <ClCompile Include="Patches.cpp" />
+    <ClCompile Include="PayloadBuilder.cpp" />
+    <ClCompile Include="Requests.cpp" />
+    <ClCompile Include="ScnGuideInfo.cpp" />
+    <ClCompile Include="Security.cpp" />
+    <ClCompile Include="SMC.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='XeLive|Xbox 360'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SystemHooks.cpp" />
+    <ClCompile Include="TitleHooks.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="XeLiveMainScene.cpp" />
+    <ClCompile Include="XeLiveTabScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Stealth.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+	<id>XeMenu</id>
+	<culture>en-GB</culture>
+	<sysexts>
+		<sysext>
+			<name>luaext.xex</name>
+			<tag>LUAXZP</tag>
+		</sysext>
+	</sysexts>
+	<webreportingsampling>100</webreportingsampling>
+	<backgroundimage>http://compass.xboxlive.com/assets/eb/73/eb7311c2-8899-49f0-81c5-d1a7eb722390.jpg?n=360-HelpSupport-BG.jpg</backgroundimage>
+	<surface>no</surface>
+	<channel>
+		<id>XeMenu</id>
+		<channeldef layouttemplate="epix://TemplateAlphabet.xur">
+			<description>XeMenu</description>
+			<type>online</type>
+			<vui>
+				<responsetype>Maintain</responsetype>
+				<message>Launching ...</message>
+			</vui>
+		</channeldef>
+	</channel>
+</manifest>

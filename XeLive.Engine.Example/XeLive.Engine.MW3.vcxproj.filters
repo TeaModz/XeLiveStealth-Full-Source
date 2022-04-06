@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="global.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="interface.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="patches.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="nativeInvoker.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="natives.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="hooking.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="systemHooks.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="titleHooks.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="SubmenuHandler.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Menu\submenus</Filter>
+    </ClCompile>
+    <ClCompile Include="Submenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>Menu\Options</Filter>
+    </ClCompile>
+    <ClCompile Include="controller.cpp">
+      <Filter>Utils\Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="global.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="patches.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="nativeInvoker.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="natives.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="hooking.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="systemHooks.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="titleHooks.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmenuHandler.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Menu\submenus</Filter>
+    </ClInclude>
+    <ClInclude Include="Submenu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>Menu\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuFunctions.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="controller.h">
+      <Filter>Utils\Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Engine.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{d7c68d03-ce77-45b0-b8c4-39ba143d0004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Backend">
+      <UniqueIdentifier>{2bd506ab-22c4-4ff4-993f-babdef64e3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{238c081e-c8e2-4d94-891b-a9ebbf8d0e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{5ad53d3c-6f24-45ad-9a27-b9b897f218b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{1416e815-75a6-4cdd-96fd-2c908febad4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\submenus">
+      <UniqueIdentifier>{8c4fbfe0-82aa-4525-a910-09950c11aa22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Options">
+      <UniqueIdentifier>{08741bad-27f6-4743-b4e2-097be25bbe54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Input">
+      <UniqueIdentifier>{2c7ce8f8-6db8-4ba4-96dc-5f2c22c2328c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
